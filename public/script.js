@@ -38,9 +38,6 @@ window.addEventListener('DOMContentLoaded', function() {
                 '<i class="fas fa-lightbulb me-2"></i><strong>Fitness Fact:</strong> Studies show that just 30 minutes of moderate exercise, 5 days a week, can reduce your risk of heart disease by 50% and boost mental health significantly! 💪';
         });
 
-    // ========================================
-    // IMAGE UPLOAD FUNCTIONALITY - REQUIRED BY TASK
-    // ========================================
 
     // Get DOM elements
     const uploadArea = document.getElementById('uploadArea');
