@@ -1,3 +1,14 @@
+/**
+ * Click Fit - Fitness Website Backend Server
+ * 
+ * This file contains the Node.js/Express server that handles:
+ * - Serving static files (HTML, CSS, JS)
+ * - Image upload functionality with Multer
+ * - API endpoints for database operations
+ * - CORS configuration for cross-origin requests
+ * 
+ * Technologies: Node.js, Express, Multer, PostgreSQL
+ */
 const express = require('express');
 const multer = require('multer');
 const path = require('path');

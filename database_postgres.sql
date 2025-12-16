@@ -1,7 +1,26 @@
--- Create database (run this separately first)
--- CREATE DATABASE clickfit_db;
-
--- Connect to the database and run the following:
+/**
+ * Click Fit - PostgreSQL Database Setup Script
+ * 
+ * This script creates the database schema and stored procedures:
+ * 
+ * 1. Creates 'users' table with columns:
+ *    - userId (SERIAL PRIMARY KEY)
+ *    - email (VARCHAR 255, UNIQUE)
+ *    - password (VARCHAR 255)
+ *    - type (VARCHAR 50)
+ *    - active (SMALLINT, default 1)
+ *    - created_at (TIMESTAMP)
+ * 
+ * 2. Creates 'addUser' stored function for inserting users
+ * 
+ * 3. Inserts 5 sample users for testing
+ * 
+ * Database: PostgreSQL 17
+ * Run this script in PgAdmin Query Tool or psql
+ * 
+ * Usage:
+ *   psql -U postgres -d clickfit_db -f database_postgres.sql
+ */
 
 -- Drop table if exists (for clean setup)
 DROP TABLE IF EXISTS users CASCADE;

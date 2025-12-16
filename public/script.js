@@ -1,5 +1,16 @@
-// Click Fit - Main JavaScript File
-
+/**
+ * Click Fit - Frontend JavaScript
+ * 
+ * Handles all client-side functionality:
+ * 1. AJAX call to NumbersAPI for historical facts
+ * 2. Image upload with drag & drop support
+ * 3. File preview before upload
+ * 4. Form submission to backend
+ * 5. UI animations and interactions
+ * 
+ * Technologies: Vanilla JavaScript, Fetch API, FileReader API
+ * Dependencies: jQuery (for Bootstrap), Bootstrap JS
+ */
 // Wait for page to fully load
 window.addEventListener('DOMContentLoaded', function() {
     console.log('Click Fit loaded successfully');
